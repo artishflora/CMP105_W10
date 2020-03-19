@@ -5,6 +5,9 @@
 #include <string>
 #include <iostream>
 
+#include "MapTiles.h"
+#include "Player.h"
+#include "Framework/Collision.h"
 
 class Level{
 public:
@@ -23,4 +26,9 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	MapTiles mapTiles;
+	Player player;
+	sf::Texture playerWalk;
+	Collision collision;
 };
